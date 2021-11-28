@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.vestibulinho{
+    position:relative;
+    margin-top:80px;
+	width:100%;
+	
+}
+
+.vestibulinho iframe{
+    width:90%;
+    height: 100vh;
+    position: relative;
+}
+
+.vestibulinho p{
+	position:relative;
+	text-align:center;
+	
+	font-size:18px;
+	color:#363636;
+	width:100%;
+}
+

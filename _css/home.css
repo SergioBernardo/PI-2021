@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background-color:#FFF;
+	font-family:sans-serif;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+/*Cabeçalho*/
+header{
+	position:fixed;
+	width:100%;
+	height:80px;
+	top:0;
+	background-color:#FFF;
+	border-bottom:solid 2px gray;
+	z-index:1;
+}
+
+#barranav{
+	display:none;
+}
+
+/*logotipo Etec*/
+nav img{
+	position:fixed;
+	top:10px;
+	margin-left:7%;
+}
+
+/*Menu de Navegação*/
+.menunavegacao{
+	position:fixed;
+	width:46%;
+	left:35%;
+	top:25px;
+}
+
+.menunavegacao a{
+	text-decoration:none;
+	font-weight:bold;
+	color:#363636;
+}
+
+.menunavegacao a:hover{
+	color:#8B0000;
+	transition:0.4s;
+}
+
+.menunavegacao a:hover:before{
+	width:100%;
+}
+
+.menunavegacao a:before{
+	content:attr(data-text);
+	border-bottom:3px solid #8B0000;
+	white-space:nowrap;
+	color:rgba(255,255,255,0.0);
+	overflow:hidden;
+	width:0%;
+	padding:10px 0;
+	transition:0.4s;
+	position:absolute;
+	left:0;
+	margin-top:-10px;
+}
+
+.menunavegacao ul{
+	position:relative;
+	width:100%;
+}
+
+.menunavegacao ul li{
+	position:relative;
+	float:left;
+	list-style:none;
+	text-align:center;
+	padding:10px;
+	height:36px;
+	width:auto;
+}
+
+/*Menu Social*/
+.menusocial{
+	position:fixed;
+	width:12%;
+	height:auto;
+	right:7%;
+	top:20px;
+}
+
+.menusocial ul{
+	position:relative;
+	display:flex;
+	padding:0;
+}
+
+.menusocial ul li{
+	list-style:none;
+	float:left;
+	transition: transform .3s;
+	margin:0;
+}
+
+.menusocial ul li:hover{
+	-webkit-transform: rotate(45deg); 
+    transform: rotate(45deg);
+	cursor:pointer;
+}
+
+.menusocial img{
+	width:20px;
+	height:20px;
+	margin:0px;
+	padding:10px;
+}
+
+/*Banner*/
+.banner{
+	position:relative;
+	margin-top:82px;
+	width:100%;
+	transition:ease-in 0.8s;
+}
+
+.banner img{
+	width:100%;
+}
+
+/*Mais Serviços*/
+.maisservicos{
+	position:relative;
+	width:100%;
+	height:45vh;
+	margin-top:20px;
+	padding-top:20px;
+}
+
+.conteudo{
+	position:relative;
+	left:15%;
+}
+
+.maisservicos .conteudo p{
+	position:relative;
+	font-weight:bold;
+	font-size:22px;
+	color:#363636;
+	margin-left:25%;
+}
+
+.maisservicos .conteudo section{
+	margin-top:30px;
+	width:14%;
+	float:left;
+	text-align:center;
+	margin-left:3%;
+	font-weight:bold;
+	transition: transform .3s;
+}
+
+.maisservicos .conteudo a{
+	text-decoration:none;
+	font-size:100%;
+	color:#8B0000;
+}
+
+.maisservicos .conteudo section:hover{
+	-webkit-transform: scale(1.2); 
+	cursor:pointer;
+}
+
+.maisservicos .conteudo section img{
+	width:80%;
+}
+
+
+/*Rodapé*/
+footer{
+	position:relative;
+	width:100%;
+	height:auto;
+	background-color:#E8E8E8;
+	display:conteins;
+}
+
+.menurodape{
+	position:relative;
+	top:40px;
+	width:35%;
+	height:20px;
+	margin-left:3%;
+}
+
+.menurodape ul{
+	list-style:none;
+}
+
+.menurodape ul li{
+	position:relative;
+	float:left;
+	list-style:none;
+	text-align:center;
+	padding:10px;
+	width:auto;
+}
+
+.menurodape a{
+	padding:10px;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	color:#363636;
+	font-weight:bold;
+	font-size:14px;
+	transition:ease-in 0.5s;
+}
+
+.menurodape ul li a:hover{
+	visibility:visible;
+	color:#8B0000;
+}
+
+.iconrodape{
+	position:relative;
+	width:20%;
+	top:30px;
+	margin-left:42.5%;
+	background-color:#457;
+}
+
+.iconrodape ul{
+	display:flex;
+	list-style:none;
+	float:left;
+}
+
+.iconrodape ul li{
+	width:100%;
+	transition: transform .3s;
+}
+
+.iconrodape ul li:hover{
+	-webkit-transform: scale(1.2); 
+	cursor:pointer;
+}
+
+.iconrodape img{
+	width:60%;
+}
+
+.logogov{
+	position:relative;
+	width:20%;
+	padding:10px;
+	margin-left:75%;
+}
+
+.logogov img{
+	width:40%;
+	padding:10px;
+}
+
+.dev{
+	height:5vh;
+}
+
+.dev p{
+	position:relative;
+	margin-left:35%;
+	font-size:14px;
+}
+
+.dev p a{
+	text-decoration:none;
+	color:#363636;
+	transition:ease-in 0.5s;
+}
+
+.dev p a:hover{
+	color:#1E90FF;
+}
+
+
+/*Responsividade*/
+

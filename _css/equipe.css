@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.esquerdo{
+	
+}
+
+table{
+	border:solid 1px black;
+	padding:0px;
+	width:45%;
+	border-collapse:collapse;
+}
+
+table tr{
+	border:solid 1px black;
+}
+
+table tr td{
+	border:solid 1px black;
+}
+
+table tr td img{
+	
+}

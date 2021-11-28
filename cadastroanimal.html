@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>AjudaCão | Campo Limpo</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="_css/home.css"/>
+<link rel="stylesheet" type="text/css" href="_css/vestibulinho.css"/>
+<link rel="stylesheet" type="text/css" href="_css/responsive.css"/>
+<link rel="shortcut icon" type="image/x-icon" href="_logos/logo.png" />
+<script language="javascript" src="_javascript/funcoes.js"></script>
+</head>
+
+<body onload="slide1()">
+	
+	<header>
+		<input type="checkbox" id="barranav">
+		<label for="barranav">
+		<div><span class="menuham"></span></div>
+		
+		<nav class="menusuperior"> 
+		
+		<a href="index.html"><img src="_imagens/_logos/logomenor.png" id="logotipoetec"/></a>
+		
+		<div class="menunavegacao">
+		<ul>
+			<li><a href="index.html" data-text="HOME">HOME</a></li>
+			<li><a href="animal.html" data-text="Animais">Animais</a></li>
+			<li><a href="adotante.html" data-text="Adotantes">Adotantes</a></li>
+			<li><a href="voluntario.html" data-text="Volutários">Voluntários</a></li>
+			<li><a href="castracao.html" data-text="castracao">Castração</a></li>
+		</ul>
+		</div>
+		</nav>	
+		<div class="menusocial">
+		<ul>
+			<li><a href="https://www.linkedin.com" target="_blank"><img src="_imagens/_logos/Linkedin.png"/></a></li>
+			<li><a href="https://www.facebook.com.br" target="_blank"><img src="_imagens/_logos/Facebook.png"/></a></li>
+			<li><a href="https://www.instagram.com" target="_blank"><img src="_imagens/_logos/Instagram.png"/></a></li>
+			<li><a href="index.html" target="_blank"><img src="_imagens/_logos/Contato.png"/></a></li>
+		</ul>
+		</div>
+	</header>
+
+
+
+	<br><br><br>
+	<div class="vestibulinho" align="center">
+        <div id="cadastro"> 
+            <form name="form" action="inserirAnimal.php" class="cadastro" method="POST">
+               <center>
+				   <h2 aling="center"><b>Cadastro de novo animal</b></h2><br><br>
+                <ul>
+				<p>Informe o nome do animal:</p>
+                <li><input type="text" name="cadNomeAnimal" id="cadNomeAnimal" placeholder="Digite o nome do animal" maxlength="300" size="40px"></li><br>
+				<p>Informe o tipo:</p>
+                <li><input type="text" name="cadTipoAnimal" id="cadTipoAnimal" placeholder="Digite o tipo do animal" maxlength="300" size="40px"></li><br>
+				<p>Informe a raça:</p>
+                <li><input type="text" name="cadRacaAnimal" id="cadRacaAnimal" placeholder="Digite a raça do animal" maxlength="300" size="40px"></li><br>
+				<p>Informe a cor predominante:</p>
+                <li><input type="text" name="cadCorAnimal" id="cadCorAnimal" placeholder="Digite a cor predominante" maxlength="300" size="40px"></li><br>
+				<br><br><br><br>
+                <li><input type="submit" id="cadastrar" name="cadastrar" placeholder="Cadastrar" value="Cadastrar"></li><br>
+               </ul>
+            </center>
+            </form>
+        </div>
+	</div>
+
+		
+	</body>
+	</html>
